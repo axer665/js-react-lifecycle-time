@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #12152e;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+canvas {
+  border-radius: 12px;
+}
+
+.clocks {
+
+}
+
+.clocks-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clock-block__container {
+  position: relative;
+  margin: 32px 0;
+  padding: 12px 0;
+  border: 1px solid #3593d5;
+  border-radius: 12px;
+}
+
+.clock-block__digital {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  padding: 6px;
+  background-color: #920606;
+  max-width: 150px;
+  width: fit-content;
+  margin: 12px auto auto;
+}
+.clock-block__digital input{
+  text-align: center;
+  width:30px;
+  height:20px;
+}
+
+.clock-name {
+  text-decoration: underline;
+  text-decoration-color: #3593d5;
+  margin: 8px auto 16px;
+  text-align: center;
+  font-size: 28px;
+  color: #ffffff;
+  overflow-wrap: anywhere;
+}
+
+.clock-block__horyzontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.form {
+  display: inline-flex;
+  align-items: flex-end;
+  margin-top:32px;
+  margin-bottom: 32px;
+  border: 1px solid #3593d5;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.form-label {
+  font-size: 24px;
+  color: #3593d5;
+}
+
+.form-control input {
+  width: 250px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.form input {
+  border: 1px solid #3593d5;
+  border-radius: 5px;
+}
+
+.form button {
+  background-color: #3593d5;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-control__name {
+  padding: 10px;
+}
+
+.form-control__user-timezone,
+.form-control__button-add {
+  padding: 10px;
+}
+.form-control__button-add:hover {
+  cursor: pointer;
+}
+
+.form-control__button-add {
+  background-color: #ffffff;
+}
+
+.clock {
+  width: 100%;
+  height: 290px;
+}
+
+.clock-box {
+  position: relative;
+  width: 300px;
+}
+
+.clock-face__circle {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 9;
+}
+
+.clock-face__hour-marks {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 9;
+}
+
+.clock-face__mid-circle {
+  fill: #ffffff;
+}
+
+.clock-hour__hour-arm {
+  fill: none;
+  stroke: #3593d5;
+  stroke-width: 17;
+}
+
+.clock-minute__minute-arm {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 11;
+}
+
+.clock-second__second-arm {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 4;
+}
+
+.clock-sizing-box {
+  fill: none;
+}
+
+.clock-hour,
+.clock-minute,
+.clock-second {
+  transform-origin: 300px 300px;
+}
+
+.clock__delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #920606;
+  border: 1px solid #3593d5;
+  border-radius: 1px 12px 1px 50%;
+  text-decoration: none;
+  user-select: none;
+}
